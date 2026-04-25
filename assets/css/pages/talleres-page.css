@@ -1,0 +1,15 @@
+.whatsappLink {
+    background-color: var(--brand-primary-light);
+}
+
+.taller-img {
+    min-height: 210px;
+}
+
+.taller-card {
+    transition: .3s ease;
+}
+
+.taller-card:hover {
+    transform: translateY(-5px);
+}

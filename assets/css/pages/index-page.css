@@ -1,0 +1,55 @@
+.whatsappLink {
+    background-color: var(--brand-primary-light);
+}
+
+.teacher-card {
+    border: 0;
+    border-radius: 16px;
+    background: var(--color-fff);
+    box-shadow: 0 8px 20px var(--color-rgba-0-0-0-08);
+    transition: all .35s ease;
+    height: 100%;
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+.teacher-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px var(--color-rgba-0-0-0-15);
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-0d6efd), var(--color-003f8f));
+    color: var(--color-fff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6rem;
+    margin: 0 auto 1rem;
+    transition: all .35s ease;
+}
+
+.teacher-card:hover .avatar {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.teacher-name {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: .25rem;
+}
+
+.teacher-title {
+    font-size: .85rem;
+    color: var(--text-muted);
+    margin-bottom: .75rem;
+}
+
+.teacher-desc {
+    font-size: .8rem;
+    color: var(--color-555);
+    line-height: 1.4;
+}
