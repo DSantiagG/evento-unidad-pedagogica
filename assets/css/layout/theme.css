@@ -7,8 +7,17 @@
 
   --brand-primary: #000066;
   --brand-primary-light: #5056AC;
+  --primary-dark: #07184A;
+  --primary-surface: #EDE0FF;
+  --primary-surface-2: #F2EFFF;
   --brand-secondary: #9D0311;
+  --secondary-light: #DB141C;
+  --secondary-dark: #690007;
   --brand-tertiary: #1D72D3;
+  --tertiary-surface: #D6E2FF;
+  --neutral-hover: #F6F6F6;
+  --neutral-border: #E4E1EC;
+  --neutral-surface: #FBF8FF;
 
   --text-primary: #222222;
   --text-secondary: #666666;

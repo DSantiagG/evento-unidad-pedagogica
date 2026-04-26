@@ -1,55 +1,264 @@
-.whatsappLink {
-    background-color: var(--brand-primary-light);
+body.business-consulting {
+    background: var(--bg-base);
+    color: var(--text-primary);
+    overflow-x: hidden;
 }
 
-.teacher-card {
-    border: 0;
-    border-radius: 16px;
-    background: var(--color-fff);
-    box-shadow: 0 8px 20px var(--color-rgba-0-0-0-08);
-    transition: all .35s ease;
+body.business-consulting .page-wrapper > section {
+    background: var(--bg-base);
+    padding: clamp(3rem, 5vw, 5rem) 0;
+}
+
+body.business-consulting .page-wrapper > .timer-section.style-two {
+    padding-top: 1rem;
+}
+
+body.business-consulting .page-wrapper > section:nth-of-type(odd) {
+    background: var(--bg-light);
+}
+
+body.business-consulting .sec-title {
+    margin-bottom: 1.5rem;
+}
+
+body.business-consulting .sec-title h2 {
+    color: var(--primary-dark);
+    font-family: var(--font-body);
+    font-size: clamp(1.65rem, 2.4vw, 2.3rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 0;
+}
+
+body.business-consulting .sec-title .separator {
+    width: 72px;
+    height: 3px;
+    margin-top: 0.7rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--brand-primary) 0%, var(--brand-tertiary) 100%);
+}
+
+body.business-consulting .sec-title.centered .separator {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.business-consulting .market-section .text p,
+body.business-consulting .market-section .content p,
+body.business-consulting .welcome-section-two p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+body.business-consulting .market-section .text p + p,
+body.business-consulting .market-section .content p + p {
+    margin-top: 1rem;
+}
+
+body.business-consulting .market-section .content-column .inner-column,
+body.business-consulting .market-section .video-column .inner-column {
+    border-radius: 18px;
+}
+
+body.business-consulting .market-section .video-column .inner-column img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(7, 24, 74, 0.08);
+}
+
+body.business-consulting .welcome-section-two .auto-container,
+body.business-consulting .market-section .auto-container,
+body.business-consulting .travel-information-section .auto-container,
+body.business-consulting section.py-5 .container {
+    position: relative;
+}
+
+body.business-consulting .welcome-section-two .feature-block-six .inner-box,
+body.business-consulting .teacher-card,
+body.business-consulting .travel-information-section .content-box {
     height: 100%;
+    border-radius: 18px;
+    border: 1px solid var(--neutral-border);
+    background: var(--color-fff);
+    box-shadow: 0 8px 18px rgba(7, 24, 74, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+body.business-consulting .welcome-section-two .feature-block-six .inner-box {
+    padding: 1.25rem;
+}
+
+body.business-consulting .welcome-section-two .feature-block-six .inner-box:hover,
+body.business-consulting .teacher-card:hover,
+body.business-consulting .travel-information-section .content-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(7, 24, 74, 0.08);
+    border-color: rgba(0, 0, 102, 0.12);
+}
+
+body.business-consulting .welcome-section-two .feature-block-six p {
+    color: var(--text-secondary);
+    line-height: 1.75;
+    margin-bottom: 0;
+}
+
+body.business-consulting .welcome-section-two .feature-block-six img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+body.business-consulting .teacher-card {
+    padding: 1.5rem 1.25rem;
     text-align: center;
-    padding: 2rem 1.5rem;
 }
 
-.teacher-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px var(--color-rgba-0-0-0-15);
+body.business-consulting .teacher-card a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
 }
 
-.avatar {
-    width: 90px;
-    height: 90px;
+body.business-consulting .teacher-card .avatar {
+    width: 84px;
+    height: 84px;
+    margin: 0 auto 1rem;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--color-0d6efd), var(--color-003f8f));
-    color: var(--color-fff);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.6rem;
-    margin: 0 auto 1rem;
-    transition: all .35s ease;
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-light) 100%);
+    color: var(--color-fff);
+    box-shadow: 0 10px 20px rgba(0, 0, 102, 0.14);
+    font-size: 2.3rem;
+    transition: transform 0.25s ease;
 }
 
-.teacher-card:hover .avatar {
-    transform: scale(1.08) rotate(-2deg);
+body.business-consulting .teacher-card:hover .avatar {
+    transform: translateY(-1px) scale(1.03);
 }
 
-.teacher-name {
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin-bottom: .25rem;
+body.business-consulting .teacher-card .teacher-name {
+    margin-bottom: 0.25rem;
+    color: var(--primary-dark);
+    font-size: 1.04rem;
+    font-weight: 800;
 }
 
-.teacher-title {
-    font-size: .85rem;
-    color: var(--text-muted);
-    margin-bottom: .75rem;
+body.business-consulting .teacher-card .teacher-title {
+    margin-bottom: 0.7rem;
+    color: var(--brand-secondary);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
-.teacher-desc {
-    font-size: .8rem;
-    color: var(--color-555);
-    line-height: 1.4;
+body.business-consulting .teacher-card .teacher-desc {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+body.business-consulting section.py-5 .container img {
+    max-height: 120px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+body.business-consulting section.py-5 .container img:hover {
+    transform: translateY(-2px);
+    opacity: 0.96;
+}
+
+body.business-consulting .travel-information-section .content-box {
+    padding: 1.6rem 1.4rem;
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--primary-dark) 100%);
+    color: var(--color-fff);
+    text-align: center;
+}
+
+body.business-consulting .travel-information-section .content-box h3 {
+    margin-bottom: 0;
+    color: var(--color-fff);
+    font-size: clamp(1.15rem, 1.7vw, 1.5rem);
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+body.business-consulting .travel-information-section iframe {
+    display: block;
+    margin-top: 1.25rem;
+    border: 1px solid var(--neutral-border);
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(7, 24, 74, 0.08);
+}
+
+body.business-consulting .whatsappLink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85rem 1.2rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-light) 100%);
+    color: var(--color-fff);
+    box-shadow: 0 8px 18px rgba(0, 0, 102, 0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+body.business-consulting .whatsappLink:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0, 0, 102, 0.18);
+    filter: brightness(1.03);
+}
+
+@media (max-width: 991.98px) {
+    body.business-consulting .page-wrapper > section {
+        padding: 2.75rem 0;
+    }
+
+    body.business-consulting .sec-title h2 {
+        font-size: clamp(1.45rem, 4.2vw, 2rem);
+    }
+
+    body.business-consulting .welcome-section-two .feature-block-six .inner-box,
+    body.business-consulting .teacher-card,
+    body.business-consulting .travel-information-section .content-box {
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    body.business-consulting .page-wrapper > section {
+        padding: 2.25rem 0;
+    }
+
+    body.business-consulting .sec-title {
+        margin-bottom: 1.1rem;
+    }
+
+    body.business-consulting .sec-title .separator {
+        width: 60px;
+        height: 3px;
+    }
+
+    body.business-consulting .market-section .video-column .inner-column img,
+    body.business-consulting .welcome-section-two .feature-block-six img,
+    body.business-consulting .travel-information-section iframe {
+        border-radius: 14px;
+    }
+
+    body.business-consulting .teacher-card {
+        padding: 1.25rem 1rem;
+    }
+
+    body.business-consulting .teacher-card .avatar {
+        width: 74px;
+        height: 74px;
+        font-size: 2rem;
+    }
+
+    body.business-consulting .travel-information-section .content-box {
+        padding: 1.25rem 1rem;
+    }
 }
