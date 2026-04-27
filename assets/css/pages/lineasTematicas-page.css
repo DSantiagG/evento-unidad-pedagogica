@@ -23,7 +23,7 @@ body.business-consulting {
 }
 
 body.business-consulting .page-wrapper > section {
-    padding: clamp(2rem, 3.5vw, 3.5rem) 0;
+    padding: clamp(2rem, 3.5vw, 3.5rem) clamp(0.9rem, 3vw, 2.1rem);
 }
 
 body.business-consulting .sec-title.centered h2,
@@ -128,7 +128,7 @@ body.business-consulting .ecosistemas-evento .card-body h2::after {
 
 @media (max-width: 767.98px) {
     body.business-consulting .page-wrapper > section {
-        padding: 2rem 0;
+        padding: 2rem clamp(0.8rem, 4.5vw, 1.05rem);
     }
 
     body.business-consulting .sec-title.centered h2 {
