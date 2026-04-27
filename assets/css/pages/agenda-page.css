@@ -23,7 +23,7 @@ body.business-consulting {
 }
 
 body.business-consulting .page-wrapper > section {
-    padding: clamp(2.5rem, 4vw, 4.5rem) 0;
+    padding: clamp(2rem, 3.5vw, 3.5rem) 0;
 }
 
 body.business-consulting .agenda-title,

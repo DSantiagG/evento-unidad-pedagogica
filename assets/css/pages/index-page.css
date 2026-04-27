@@ -6,11 +6,123 @@ body.business-consulting {
 
 body.business-consulting .page-wrapper > section {
     background: var(--bg-base);
-    padding: clamp(3rem, 5vw, 5rem) 0;
+    padding: clamp(2.25rem, 4vw, 3.5rem) 0;
+}
+
+body.business-consulting .page-wrapper > .home-highlights-section {
+    background: transparent;
+    padding: 0.65rem 0 0.35rem;
+}
+
+body.business-consulting .home-highlights-panel {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 205px));
+    justify-content: center;
+    gap: 0.6rem;
+    width: fit-content;
+    margin: 0 auto 1rem;
+}
+
+body.business-consulting .timer-section.style-two .home-highlights-panel {
+    margin-top: 2rem;
 }
 
 body.business-consulting .page-wrapper > .timer-section.style-two {
     padding-top: 1rem;
+}
+
+body.business-consulting .timer-section.style-two .inner-container {
+    background: var(--bg-base);
+}
+
+body.business-consulting .timer-section.style-two .title-column .inner-column {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--tertiary-surface);
+    border-radius: 18px;
+}
+
+body.business-consulting .timer-section.style-two .row {
+    align-items: stretch;
+}
+
+body.business-consulting .timer-section.style-two .title-column h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+body.business-consulting .home-highlights-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-height: 66px;
+    padding: 0.6rem 0.78rem;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 102, 0.08);
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 8px 18px rgba(7, 24, 74, 0.06);
+    overflow: hidden;
+}
+
+body.business-consulting .home-highlights-card::after {
+    content: "";
+    position: absolute;
+    inset: auto -18px -18px auto;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(0, 0, 102, 0.07), rgba(0, 0, 102, 0) 68%);
+    pointer-events: none;
+}
+
+body.business-consulting .home-highlights-card--soft {
+    background: rgba(255, 255, 255, 0.96);
+}
+
+body.business-consulting .home-highlights-icon {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--tertiary-surface);
+    color: var(--primary-dark);
+    font-size: 0.98rem;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.78), 0 5px 12px rgba(0, 0, 102, 0.07);
+}
+
+body.business-consulting .home-highlights-copy {
+    position: relative;
+    z-index: 1;
+}
+
+body.business-consulting .home-highlights-label {
+    display: block;
+    margin-bottom: 0.12rem;
+    color: var(--brand-secondary);
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+body.business-consulting .home-highlights-value {
+    display: block;
+    color: var(--primary-dark);
+    font-size: clamp(0.94rem, 1.2vw, 1.08rem);
+    font-weight: 800;
+    line-height: 1.15;
 }
 
 body.business-consulting .page-wrapper > section:nth-of-type(odd) {
@@ -54,7 +166,7 @@ body.business-consulting .welcome-section-two p {
 
 body.business-consulting .market-section .text p + p,
 body.business-consulting .market-section .content p + p {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 body.business-consulting .market-section .content-column .inner-column,
@@ -214,7 +326,7 @@ body.business-consulting .whatsappLink:hover {
 
 @media (max-width: 991.98px) {
     body.business-consulting .page-wrapper > section {
-        padding: 2.75rem 0;
+        padding: 2.25rem 0;
     }
 
     body.business-consulting .sec-title h2 {
@@ -229,8 +341,35 @@ body.business-consulting .whatsappLink:hover {
 }
 
 @media (max-width: 767.98px) {
+    body.business-consulting .page-wrapper > .home-highlights-section {
+        padding: 0.55rem 0 0.3rem;
+    }
+
+    body.business-consulting .home-highlights-panel {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0 0 0.85rem;
+    }
+
+    body.business-consulting .timer-section.style-two .home-highlights-panel {
+        margin-top: 0.6rem;
+    }
+
+    body.business-consulting .home-highlights-card {
+        min-height: 0;
+        padding: 0.72rem 0.85rem;
+        border-radius: 14px;
+    }
+
+    body.business-consulting .home-highlights-icon {
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px;
+        font-size: 0.92rem;
+    }
+
     body.business-consulting .page-wrapper > section {
-        padding: 2.25rem 0;
+        padding: 1.75rem 0;
     }
 
     body.business-consulting .sec-title {

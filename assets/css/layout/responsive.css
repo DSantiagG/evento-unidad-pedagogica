@@ -77,7 +77,7 @@
 	.main-header .header-upper .outer-container{
 		padding:0px 15px;
 	}
-	
+
 	.timer-section .inner-container{
 		margin-top:0px;
 		padding:42px 20px 30px;
@@ -249,6 +249,16 @@
 	
 	.timer-section .inner-container .title-column{
 		margin-bottom:40px;
+	}
+
+	.timer-section.style-two .inner-container{
+		padding-left:20px;
+		padding-right:20px;
+	}
+
+	.timer-section.style-two .inner-container .title-column .inner-column,
+	.timer-section.style-two .inner-container .time-column .inner-column{
+		width:100%;
 	}
 	
 	.main-header.header-style-two .nav-outer{
@@ -1126,6 +1136,16 @@
 		padding:20px 20px;
 	}
 	
+}
+
+/* Ensure the banner image can render fully at all breakpoints */
+body.business-consulting .page-wrapper,
+body.business-consulting .banner-section-two,
+body.business-consulting .banner-section-two .outer-container,
+body.business-consulting .banner-section-two .outer-container img{
+	overflow: visible !important;
+	height: auto !important;
+	max-height: none !important;
 }
 
 @media only screen and (max-width: 479px) {

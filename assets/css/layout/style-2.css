@@ -137,7 +137,7 @@
 ***/
 
 .timer-section.style-two {
-    margin-top: -85px;
+    margin-top: -40px;
 }
 
 
@@ -1547,11 +1547,6 @@
 .business-consulting .btn-style-one:hover {
     color: var(--brand-secondary);
 }
-
-.business-consulting .time-counter .time-countdown .counter-column {
-	color: var(--brand-secondary);
-}
-
 
 
 

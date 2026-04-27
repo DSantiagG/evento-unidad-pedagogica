@@ -3792,25 +3792,28 @@ img{
 
 .market-section{
 	position:relative;
-	padding: 20px 0px 20px;
+	padding: 10px 0px 10px;
 }
 
 
 .banner-section-two{
 	position:relative;
 	padding: 80px 0px 40px; /* moderate top padding to avoid cropping the image */
+	overflow: visible !important; /* ensure banner isn't clipped by ancestor overflow rules */
 }
 
 .banner-section-two .outer-container img{
 	display:block;
 	width:100%;
 	height:auto; /* ensure image keeps aspect ratio and doesn't get cropped */
+	max-width:100%;
 }
 
 .banner-section-two .outer-container{
 	position:relative;
 background: var(--color-rgb-2-0-36);
 background: linear-gradient(0deg, var(--color-rgba-2-0-36-1) 0%, var(--color-rgba-56-115-255-1) 0%, var(--color-rgba-93-222-255-1) 100%);
+	overflow: visible !important; /* prevent accidental clipping from other rules */
 }
 
 .banner-section-two .image-column{
