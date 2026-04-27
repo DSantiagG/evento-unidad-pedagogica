@@ -237,7 +237,22 @@ body.business-consulting .travel-information-section .content-box {
 }
 
 body.business-consulting .welcome-section-two .feature-block-six .inner-box {
-    padding: 1.25rem;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body.business-consulting .welcome-section-two .feature-block-six .inner-box img {
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    border-radius: 18px 18px 0 0;
+}
+
+body.business-consulting .welcome-section-two .feature-block-six .inner-box p {
+    margin: 0;
+    padding: 1.15rem 1.25rem 1.25rem;
 }
 
 body.business-consulting .welcome-section-two .feature-block-six .inner-box:hover,
