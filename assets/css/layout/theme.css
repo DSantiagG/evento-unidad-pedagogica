@@ -10,9 +10,11 @@
   --primary-dark: #07184A;
   --primary-surface: #EDE0FF;
   --primary-surface-2: #F2EFFF;
+
   --brand-secondary: #9D0311;
   --secondary-light: #DB141C;
   --secondary-dark: #690007;
+
   --brand-tertiary: #1D72D3;
   --tertiary-surface: #D6E2FF;
   --neutral-hover: #F6F6F6;
@@ -27,6 +29,8 @@
   --bg-light: #f7f8fb;
   --bg-dark: #131144;
   --bg-footer: #edebeb;
+
+  --bg-neutral: #FBF8FF;
 
   
 

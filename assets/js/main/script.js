@@ -336,7 +336,7 @@
 		$('.time-countdown').each(function() {
 		var $this = $(this), finalDate = $(this).data('countdown');
 		$this.countdown(finalDate, function(event) {
-			var $this = $(this).html(event.strftime('' + '<div class="counter-column"><span class="count">%D</span><span class="unit">Días</div></div> ' + '<div class="counter-column"><span class="count">%H</span><span class="unit">Horas</div></div>  ' + '<div class="counter-column"><span class="count">%M</span><span class="unit">Minutos</div></div>  ' + '<div class="counter-column"><span class="count">%S</span><span class="unit">Segundos</div></div>'));
+			var $this = $(this).html(event.strftime('' + '<div class="counter-column"><span class="count">%D</span><span class="unit" style="color:var(--brand-secondary);">Días</span></div> ' + '<div class="counter-column"><span class="count">%H</span><span class="unit" style="color:var(--brand-secondary);">Horas</span></div>  ' + '<div class="counter-column"><span class="count">%M</span><span class="unit" style="color:var(--brand-secondary);">Minutos</span></div>  ' + '<div class="counter-column"><span class="count">%S</span><span class="unit" style="color:var(--brand-secondary);">Segundos</span></div>'));
 		});
 	 });
 	}

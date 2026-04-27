@@ -260,6 +260,43 @@
 	.timer-section.style-two .inner-container .time-column .inner-column{
 		width:100%;
 	}
+
+	.timer-section .inner-container{
+		padding:14px 10px 12px;
+	}
+
+	.timer-section .inner-container .title-column h2{
+		font-size:24px;
+	}
+
+	.timer-section .inner-container .title-column{
+		margin-bottom:18px;
+	}
+
+	.timer-section.style-two .time-counter .time-countdown .counter-column{
+		width:72px;
+		margin-right:4px;
+		font-size:10px;
+		line-height:1.1em;
+		padding-bottom:8px;
+	}
+
+	.timer-section.style-two .time-counter .time-countdown .counter-column .count{
+		font-size:20px;
+		padding:10px 0px 12px;
+		margin-bottom:4px;
+	}
+
+	.timer-section.style-two .time-counter .time-countdown .counter-column .unit{
+		font-size:9px;
+	}
+
+	.timer-section.style-two .time-counter .time-countdown .counter-column:before{
+		top:4px;
+		right:-6px;
+		font-size:32px;
+		line-height:1;
+	}
 	
 	.main-header.header-style-two .nav-outer{
 		padding-top:0px;
@@ -439,8 +476,23 @@
 @media only screen and (max-width: 767px){
 	
 	.main-header{
-		position:relative;
-		background-color:#222222;
+		position:fixed;
+		top:0;
+		left:0;
+	right:0;
+		width:100%;
+		z-index:1000;
+		background-color:var(--color-fff);
+		box-shadow:0 4px 14px rgba(7, 24, 74, 0.06);
+	}
+
+	body.business-consulting .banner-section-two{
+		margin-top:72px;
+	}
+
+	.main-header .header-upper{
+		background:var(--color-fff);
+		border-bottom:3px solid var(--brand-primary);
 	}
 	
 	.main-header .header-upper .outer-box{

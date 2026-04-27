@@ -1531,23 +1531,17 @@ img{
 	width: 100%;
 	height: 100%;
 	z-index: 1;
-	background: var(--color-rgba-0-0-0-0-90);
-	-webkit-transform: translateX(101%);
-	-ms-transform: translateX(101%);
-	transform: translateX(101%);
+	background: transparent;
+	pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
 }
 
 .mobile-menu-visible .mobile-menu .menu-backdrop{
-	opacity: 1;
-	visibility: visible;
-	-webkit-transition:all 0.7s ease;
-	-moz-transition:all 0.7s ease;
-	-ms-transition:all 0.7s ease;
-	-o-transition:all 0.7s ease;
-	transition:all 0.7s ease;
-	-webkit-transform: translateX(0%);
-	-ms-transform: translateX(0%);
-	transform: translateX(0%);
+	display: none;
 }
 
 .mobile-menu .menu-box{
@@ -1558,7 +1552,7 @@ img{
 	height: 100%;
 	max-height: 100%;
 	overflow-y: auto;
-	background: var(--bg-base);
+	background: var(--bg-neutral);
 	padding: 0px 0px;
 	z-index: 5;
 	opacity: 0;
@@ -1572,11 +1566,11 @@ img{
 .mobile-menu-visible .mobile-menu .menu-box{
 	opacity: 1;
 	visibility: visible;
-	-webkit-transition:all 0.7s ease 500ms;
-	-moz-transition:all 0.7s ease 500ms;
-	-ms-transition:all 0.7s ease 500ms;
-	-o-transition:all 0.7s ease 500ms;
-	transition:all 0.7s ease 500ms;
+	-webkit-transition:all 0.7s ease 0s;
+	-moz-transition:all 0.7s ease 0s;
+	-ms-transition:all 0.7s ease 0s;
+	-o-transition:all 0.7s ease 0s;
+	transition:all 0.7s ease 0s;
 	-webkit-transform: translateX(0%);
 	-ms-transform: translateX(0%);
 	transform: translateX(0%);
@@ -1637,16 +1631,23 @@ img{
 	position: relative;
 	display: block;
 	line-height: 24px;
-	padding: 10px 20px;
+	padding: 12px 20px 14px;
 	font-weight:500;
 	font-size: 15px;
-	color: var(--color-404040);
+	color: var(--brand-primary);
+	text-align: left;
+	transition: color 300ms ease;
 	
 }
 
 .mobile-menu .navigation li > a:hover,
 .mobile-menu .navigation li.current > a{
-	color:var(--brand-primary);	
+	color:var(--brand-secondary);
+	text-decoration-line: underline;
+	text-decoration-color: var(--brand-secondary);
+	text-decoration-thickness: 3px;
+	text-underline-offset: 9px;
+	text-decoration-skip-ink: none;
 }
 
 .mobile-menu .navigation li.dropdown .dropdown-btn{
@@ -2121,6 +2122,7 @@ img{
 
 .time-counter.style-two .time-countdown .counter-column .unit{
 	text-transform:uppercase;
+	color:var(--brand-secondary);
 }
 
 .time-counter.style-two .time-countdown .counter-column:before{
@@ -8779,19 +8781,22 @@ color:var(--color-fff);
      background-color:var(--brand-primary);
 }
 
-.whatsappLink {
+body.business-consulting .whatsappLink {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.85rem 1.2rem;
+	border-radius: 999px;
+	background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-light) 100%);
+	color: var(--color-fff);
+	box-shadow: 0 8px 18px rgba(0, 0, 102, 0.15);
+	transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
 	right: 30px;
 	z-index: 99;
-	top: 60%;
+	top: 59%;
 	position: fixed;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
-	border-radius: 30px;
-	display: inline-block;
-	color: var(--bg-base) !important;
-	padding: 10px 25px 10px;
-	font-size: 18px;
-	font-weight: 500;
 	-webkit-animation-name: tada;
 	animation-name: tada;
 	-webkit-animation-duration: 5s;
@@ -8800,4 +8805,18 @@ color:var(--color-fff);
 	animation-fill-mode: both;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
+}
+
+body.business-consulting .whatsappLink:hover {
+	transform: translateY(-50%) scale(1.02);
+	box-shadow: 0 10px 22px rgba(0, 0, 102, 0.18);
+	filter: brightness(1.03);
+}
+
+@media (max-width: 767.98px) {
+	body.business-consulting .whatsappLink {
+		padding: 0.55rem 0.8rem;
+		font-size: 0.78rem;
+		box-shadow: 0 6px 14px rgba(0, 0, 102, 0.12);
+	}
 }
