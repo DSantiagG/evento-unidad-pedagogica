@@ -31,8 +31,17 @@ body.business-consulting .sec-title.centered h2::after {
     background: linear-gradient(90deg, var(--brand-primary) 0%, var(--brand-tertiary) 100%);
 }
 
+body.business-consulting .page-wrapper > section.welcome-section-two {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
 body.business-consulting .welcome-section-two .auto-container {
-    padding-top: clamp(0.5rem, 1.5vw, 1rem);
+    padding-top: 0;
+}
+
+body.business-consulting .welcome-section-two .sec-title.centered {
+    margin-bottom: 0.75rem;
 }
 
 body.business-consulting .welcome-section-two .auto-container p {
