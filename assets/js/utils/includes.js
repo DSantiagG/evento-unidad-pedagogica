@@ -19,8 +19,31 @@
         }
     }
 
+    function normalizePageName(value) {
+        if (!value) {
+            return "index";
+        }
+
+        var cleanValue = value.split("?")[0].split("#")[0];
+
+        try {
+            cleanValue = decodeURIComponent(cleanValue);
+        } catch (error) {
+            // Keep the raw value if it cannot be decoded.
+        }
+
+        cleanValue = cleanValue.replace(/\/+$|^\/+/, "");
+
+        if (!cleanValue) {
+            return "index";
+        }
+
+        var lastSegment = cleanValue.split("/").pop() || "index";
+        return lastSegment.replace(/\.html?$/i, "").toLowerCase();
+    }
+
     function markActiveMenuItem() {
-        var page = window.location.pathname.split("/").pop() || "index.html";
+        var page = normalizePageName(window.location.pathname);
         var links = document.querySelectorAll(".main-header .navigation a");
 
         links.forEach(function (link) {
@@ -29,11 +52,14 @@
                 return;
             }
 
-            var href = link.getAttribute("href");
-            if (href === page) {
+            var href = normalizePageName(link.getAttribute("href"));
+            var isActive = href === page;
+
+            item.classList.toggle("current", isActive);
+            item.classList.toggle("current-menu-item", isActive);
+
+            if (isActive) {
                 item.classList.add("current");
-            } else {
-                item.classList.remove("current");
             }
         });
     }
