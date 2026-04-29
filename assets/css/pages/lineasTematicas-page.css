@@ -55,48 +55,48 @@ body.business-consulting .welcome-section-two .auto-container h3 {
     font-size: 1.2rem;
 }
 
-body.business-consulting .ecosistemas-evento .container {
+body.business-consulting .thematic-lines-section .container {
     padding-top: clamp(0.25rem, 1vw, 0.75rem);
 }
 
-.ecosistema-card {
+.thematic-line-card {
     transition: all .3s ease;
     border: 1px solid var(--neutral-border);
     box-shadow: 0 8px 18px rgba(7, 24, 74, 0.06) !important;
 }
 
-.ecosistema-card:hover {
+.thematic-line-card:hover {
     transform: translateY(-4px);
 }
 
-.ecosistema-img {
+.thematic-line-img {
     height: 300px;
 }
 
 /* Línea temática: títulos principales */
-.ecosistemas-evento .card-body h3 {
+.thematic-lines-section .card-body h3 {
     color: var(--brand-primary);
 }
 
-body.business-consulting .ecosistemas-evento .card-body h3 {
+body.business-consulting .thematic-lines-section .card-body h3 {
     color: var(--primary-dark);
     font-weight: 800 !important;
     line-height: 1.25;
 }
 
 /* Solo los encabezados "Subtemas" y las etiquetas "Coordinadores" deben ser secundarias */
-.ecosistemas-evento .card-body h2 {
+.thematic-lines-section .card-body h2 {
     color: var(--brand-secondary);
 }
 
-body.business-consulting .ecosistemas-evento .card-body h2 {
+body.business-consulting .thematic-lines-section .card-body h2 {
     color: var(--brand-secondary);
     font-size: 1.2rem;
     font-weight: 800;
     margin-top: 1rem;
 }
 
-body.business-consulting .ecosistemas-evento .card-body h2::after {
+body.business-consulting .thematic-lines-section .card-body h2::after {
     content: "";
     display: block;
     width: 56px;
@@ -105,7 +105,7 @@ body.business-consulting .ecosistemas-evento .card-body h2::after {
     border-radius: 999px;
     background: linear-gradient(90deg, var(--brand-secondary) 0%, var(--secondary-light) 100%);
 }
-.ecosistemas-evento .card-body p > strong {
+.thematic-lines-section .card-body p > strong {
     color: var(--brand-secondary);
 }
 
@@ -122,27 +122,27 @@ body.business-consulting .ecosistemas-evento .card-body h2::after {
         padding: 2rem clamp(0.8rem, 4.5vw, 1.05rem);
     }
 
-    body.business-consulting .ecosistemas-evento .row.g-0.align-items-stretch {
+    body.business-consulting .thematic-lines-section .row.g-0.align-items-stretch {
         flex-direction: column;
     }
 
-    body.business-consulting .ecosistemas-evento .row.g-0.align-items-stretch > [class*="col-"] {
+    body.business-consulting .thematic-lines-section .row.g-0.align-items-stretch > [class*="col-"] {
         flex: 0 0 100%;
         max-width: 100%;
         width: 100%;
     }
 
-    body.business-consulting .ecosistema-img {
+    body.business-consulting .thematic-line-img {
         height: auto;
     }
 
-    body.business-consulting .ecosistema-img img {
+    body.business-consulting .thematic-line-img img {
         display: block;
         width: 100%;
         height: auto;
     }
 
-    body.business-consulting .ecosistemas-evento .card-body {
+    body.business-consulting .thematic-lines-section .card-body {
         padding: 1.1rem 1rem;
     }
 
@@ -156,7 +156,7 @@ body.business-consulting .ecosistemas-evento .card-body h2::after {
     }
 
     body.business-consulting .welcome-section-two .auto-container,
-    body.business-consulting .ecosistemas-evento .container {
+    body.business-consulting .thematic-lines-section .container {
         padding-left: 0;
         padding-right: 0;
     }

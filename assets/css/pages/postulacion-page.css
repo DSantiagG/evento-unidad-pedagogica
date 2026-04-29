@@ -1,12 +1,12 @@
-.ecosistema-card {
+.thematic-line-card {
     transition: all .3s ease;
 }
 
-.ecosistema-card:hover {
+.thematic-line-card:hover {
     transform: translateY(-4px);
 }
 
-.ecosistema-img {
+.thematic-line-img {
     background: var(--color-f4f6f9);
     min-height: 260px;
 }
