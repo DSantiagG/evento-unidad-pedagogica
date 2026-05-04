@@ -18,8 +18,8 @@ body.business-consulting .info-hero .lead {
 
 /* Ensure the primary button stands out */
 .info-hero .btn-primary {
-    background: var(--brand-primary);
-    border-color: var(--brand-primary);
+    background: var(--primary);
+    border-color: var(--primary);
 }
 
 /* Section base spacing consistent with other pages */
@@ -55,7 +55,7 @@ body.business-consulting .page-wrapper > section:nth-of-type(even) {
     height: 3px;
     margin: 0.7rem auto 0;
     border-radius: 999px;
-    background: linear-gradient(90deg, var(--brand-primary) 0%, var(--brand-tertiary) 100%);
+    background: linear-gradient(90deg, var(--primary) 0%, var(--tertiary) 100%);
 }
 
 /* Notices (Avisos) */
@@ -74,18 +74,12 @@ body.business-consulting .page-wrapper > section:nth-of-type(even) {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-light) 100%);
+    color: var(--color-000);
+    background: var(--tertiary-var-3);
     font-size: 1.2rem;
     flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 102, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 102, 0.08);
     transition: transform .24s ease, box-shadow .24s ease;
-}
-
-/* Second notice card gets a tertiary (blue) accent */
-.notice-card:nth-child(2) .notice-icon {
-    background: linear-gradient(135deg, var(--brand-tertiary) 0%, var(--tertiary-var-1) 100%);
-    box-shadow: 0 4px 12px rgba(29, 114, 211, 0.18);
 }
 
 .notice-body h3 {
@@ -97,7 +91,7 @@ body.business-consulting .page-wrapper > section:nth-of-type(even) {
 .notice-body p {
     margin: 0;
     color: var(--text-secondary);
-    line-height: 1.5;
+    line-height: 1.35;
 }
 
 /* Circulares list */
@@ -114,28 +108,16 @@ body.business-consulting .page-wrapper > section:nth-of-type(even) {
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
     transition: background .2s ease, border-color .2s ease, box-shadow .2s ease;
 }
 
-.circular-list li::before {
-    content: "";
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--brand-primary);
-    flex-shrink: 0;
-}
-
 .circular-list li:hover {
-    background: var(--neutral-var-3);
     border-color: rgba(0, 0, 102, 0.14);
     box-shadow: 0 4px 12px rgba(7, 24, 74, 0.06);
 }
 
 .circular-list li .link-view {
-    color: var(--brand-primary);
+    color: var(--primary);
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
@@ -143,15 +125,15 @@ body.business-consulting .page-wrapper > section:nth-of-type(even) {
     transition: color .2s ease;
 }
 
-.circular-list li:hover .link-view {
-    color: var(--brand-tertiary);
+.circular-list li .link-view:hover {
+    color: var(--tertiary);
 }
 
 /* Gallery placeholder */
 .gallery-placeholder {
     border: 2px dashed var(--neutral-var-1);
     border-radius: 18px;
-    background: var(--neutral-var-3);
+    background: var(--color-f4f4f6);
     box-shadow: 0 4px 12px rgba(7, 24, 74, 0.04);
 }
 
@@ -163,7 +145,7 @@ body.business-consulting .page-wrapper > section:nth-of-type(even) {
     align-items: center;
     justify-content: center;
     border-radius: 999px;
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--brand-primary) 100%);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
     color: #fff;
 }
 

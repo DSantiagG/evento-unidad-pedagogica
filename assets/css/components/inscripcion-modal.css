@@ -80,7 +80,7 @@
 
 .insc-close:hover {
     background: var(--tertiary-surface);
-    color: var(--brand-primary);
+    color: var(--primary);
     transform: scale(1.1);
 }
 
@@ -99,7 +99,7 @@
     margin: 0 auto 0.95rem;
     border-radius: 50%;
     background: var(--tertiary-surface);
-    color: var(--brand-primary);
+    color: var(--primary);
     font-size: 1.45rem;
     box-shadow: 0 6px 16px rgba(0, 0, 102, 0.1);
 }
@@ -119,7 +119,7 @@
     height: 3px;
     margin: 0 auto;
     border-radius: 999px;
-    background: linear-gradient(90deg, var(--brand-primary) 0%, var(--brand-tertiary) 100%);
+    background: linear-gradient(90deg, var(--primary) 0%, var(--tertiary) 100%);
 }
 
 /* Body */
@@ -141,7 +141,7 @@
     display: grid;
     place-items: center;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-light) 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
     color: #fff;
     font-family: var(--font-body);
     font-size: 0.92rem;
@@ -182,7 +182,7 @@
     gap: 0.38rem;
     padding: 0.48rem 1.1rem;
     border-radius: 999px;
-    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-light) 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
     color: #fff !important;
     font-family: var(--font-body);
     font-size: 0.8rem;
@@ -202,12 +202,38 @@
 }
 
 .insc-link--secondary {
-    background: linear-gradient(135deg, var(--brand-secondary) 0%, var(--secondary-light) 100%);
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);
     box-shadow: 0 4px 12px rgba(157, 3, 17, 0.18);
 }
 
 .insc-link--secondary:hover {
     box-shadow: 0 7px 20px rgba(157, 3, 17, 0.24);
+}
+
+/* Required note */
+.insc-note {
+    margin-top: 1.2rem;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    background: var(--tertiary-surface, #eef3ff);
+    border-left: 3px solid var(--brand-primary, #000066);
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    line-height: 1.45;
+}
+
+.insc-note i {
+    color: var(--brand-primary, #000066);
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.insc-note span {
+    flex: 1;
+    min-width: 0;
 }
 
 /* Divider between form items */

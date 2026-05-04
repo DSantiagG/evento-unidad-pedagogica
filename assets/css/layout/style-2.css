@@ -98,7 +98,7 @@
 	position:relative;
 	font-size:24px;
 	color:var(--bg-base);
-	line-height:1.3em;
+	line-height:1.45em;
 	padding:15px 0px;
 	letter-spacing:2px;
 	display:inline-block;
@@ -288,7 +288,7 @@
 }
 
 .speaker-section.style-two .speaker-block .inner-box .image:before {
-    background: var(--brand-secondary);
+    background: var(--secondary);
 }
 
 .speaker-section.style-two .speaker-block .inner-box .image .social-box {
@@ -345,7 +345,7 @@
     position: relative;
     color: var(--text-secondary);
     font-size: 16px;
-    line-height: 1.7em;
+    line-height: 1.4em;
     margin-bottom: 35px;
 }
 
@@ -381,7 +381,7 @@
 }
 
 .speaker-section.style-three .speaker-block .inner-box .image:before {
-    background: var(--brand-secondary);
+    background: var(--secondary);
 }
 
 .speaker-section.style-three .speaker-block .inner-box .image .social-box {
@@ -434,7 +434,7 @@
     position: relative;
     color: var(--text-secondary);
     font-size: 16px;
-    line-height: 1.7em;
+    line-height: 1.4em;
     margin-bottom: 35px;
 }
 
@@ -538,7 +538,7 @@
 }
 
 .main-footer.style-four .social-icons li a:hover {
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .main-footer.style-four .footer-nav {
@@ -577,15 +577,15 @@
 	background-color:var(--bg-base);
 	box-shadow:0px 0px 15px var(--color-rgba-0-0-0-0-15);
 	margin: 0 auto;
-	border-bottom: 5px solid var(--brand-primary);
+	border-bottom: 5px solid var(--primary);
 }
 
 .travel-information-section .content-box h3{
 	position:relative;
-	color:var(--brand-primary);
+	color:var(--primary);
 	font-size:24px;
 	font-weight:700;
-	line-height:1.3em;
+	line-height:1.45em;
 	text-align: center;
 }
 
@@ -612,7 +612,7 @@
 	position:relative;
 	color:var(--text-primary);
 	font-size:18px;
-	line-height:1.7em;
+	line-height:1.4em;
 	font-weight:700;
 	margin-bottom:18px;
     width: 33.33%;
@@ -623,7 +623,7 @@
 	position:relative;
 	color:var(--text-secondary);
 	font-size:16px;
-	line-height:1.7em;
+	line-height:1.4em;
 	font-weight:400;
 	display:block;
 	margin-top:4px;
@@ -792,8 +792,8 @@
 
 .events-section.style-five .events-info-tabs .events-tabs .tab-btns .tab-btn {
     color: var(--bg-base);
-    border-color: var(--brand-secondary);
-    background: var(--brand-secondary) url(../../images/background/pattern-2.png) no-repeat;
+    border-color: var(--secondary);
+    background: var(--secondary) url(../../images/background/pattern-2.png) no-repeat;
     background-size: cover;
 }
 
@@ -877,7 +877,7 @@
 	background: var(--color-fff);
 	border-radius: 50%;
 	font-size: 18px;
-	color: var(--brand-secondary);
+	color: var(--secondary);
 	box-shadow: 0 0 40px var(--color-rgba-0-0-0-0-10);
 	z-index: 9;
 }
@@ -897,7 +897,7 @@
 	content: '';
 	width: 80px;
 	height: 80px;
-	background: var(--brand-secondary);
+	background: var(--secondary);
 	left: 0px;
 	top: 0px;
 	transform: scale(.6);
@@ -912,7 +912,7 @@
 }
 
 .about-section .image-one .video-box-two a {
-	color: var(--brand-secondary);
+	color: var(--secondary);
 	display: inline-block;
 	transition: .5s;
 	width: 80px;
@@ -955,7 +955,7 @@
 	position: relative;
 	color: var(--text-secondary);
 	font-size: 16px;
-	line-height: 1.7em;
+	line-height: 1.4em;
 	margin-bottom: 35px;
 }
 
@@ -1023,7 +1023,7 @@
 .feature-block-six .inner-box .icon-box{
 	position: relative;
 	left:0px;
-	color:var(--brand-secondary);
+	color:var(--secondary);
 	line-height:1em;
 	font-size:56px;
 	margin-bottom: 20px;
@@ -1032,7 +1032,7 @@
 .feature-block-six .inner-box h3{
 	position:relative;
 	font-weight:700;
-	line-height:1.3em;
+	line-height:1.45em;
 }
 
 .feature-block-six .inner-box h3 a{
@@ -1047,7 +1047,7 @@
 }
 
 .feature-block-six .inner-box h3 a:hover{
-	color:var(--brand-secondary);
+	color:var(--secondary);
 }
 
 .feature-block-six .inner-box .text{
@@ -1055,7 +1055,7 @@
 	font-weight:400;
 	color:var(--text-secondary);
 	font-size:16px;
-	line-height:1.7em;
+	line-height:1.4em;
 	margin-top:12px;
 }
 
@@ -1316,65 +1316,65 @@
 .business-consulting .main-menu .navigation > li.current > a, 
 .business-consulting .main-header.light-version .main-menu .navigation > li:hover > a, 
 .business-consulting .main-header.light-version .main-menu .navigation > li.current > a {
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .main-header .header-upper .outer-box .btn-box .theme-btn {
-    background: var(--brand-secondary);
-    border-color: var(--brand-secondary);
+    background: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .business-consulting .main-header .header-upper .outer-box .btn-box .theme-btn:hover {
     background: transparent;
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .main-menu .navigation > li > a:before {
-    background: var(--brand-secondary);
+    background: var(--secondary);
 }
 
 .business-consulting .banner-section-four .buttons-box .btn-style-two {
-    background: var(--brand-secondary);
-    border-color: var(--brand-secondary);
+    background: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .business-consulting .banner-section-four .buttons-box .btn-style-two:hover {
     background: transparent;
-    border-color: var(--brand-secondary);
-    color: var(--brand-secondary);
+    border-color: var(--secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .banner-section-four .buttons-box .btn-style-one {
-    background: var(--brand-secondary);
-    border-color: var(--brand-secondary);
+    background: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .business-consulting .banner-section-four .buttons-box .btn-style-one:hover {
     background: transparent;
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .sec-title .title {
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .btn-style-two {
-    background: var(--brand-secondary);
-    border-color: var(--brand-secondary);
+    background: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .business-consulting .btn-style-two:hover {
     background: transparent;
-    border-color: var(--brand-secondary);
-    color: var(--brand-secondary);
+    border-color: var(--secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .feature-block-six .inner-box .icon-box {
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .feature-block-six .inner-box h3 a:hover {
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .counter-section-two:before {
@@ -1401,7 +1401,7 @@
 }
 
 .business-consulting .speaker-section.style-three .speaker-block .inner-box .image:before {
-    background: var(--brand-secondary);
+    background: var(--secondary);
 }
 
 .business-consulting .speaker-section.style-three .speaker-block .inner-box .image:after {
@@ -1409,47 +1409,47 @@
 }
 
 .business-consulting .speaker-section.style-three .speaker-block .inner-box .image .social-box {
-    background: var(--brand-secondary);
+    background: var(--secondary);
 }
 
 .business-consulting .speaker-block .inner-box .lower-content .designation {
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .btn-style-four:before {
-    background: var(--brand-secondary);
+    background: var(--secondary);
 }
 
 .business-consulting .btn-style-four:after {
-    border-color: var(--brand-secondary);
+    border-color: var(--secondary);
 }
 
 .business-consulting .btn-style-four:hover {
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .events-section .events-info-tabs .events-tabs .tab-btns .tab-btn:hover, 
 .business-consulting .events-section .events-info-tabs .events-tabs .tab-btns .tab-btn.active-btn {
-    background: var(--brand-secondary) url(../../images/background/pattern-2.png) no-repeat;
-    border-color: var(--brand-secondary);
+    background: var(--secondary) url(../../images/background/pattern-2.png) no-repeat;
+    border-color: var(--secondary);
     background-size: cover;
 }
 
 .business-consulting .events-section .events-info-tabs .events-tabs .tab-btns .tab-btn {
-    border-color: var(--brand-secondary);
-    background-color: var(--brand-secondary);
+    border-color: var(--secondary);
+    background-color: var(--secondary);
 }
 
 .business-consulting .event-block .inner-box .info-column h2 a:hover {
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .events-section.style-four .event-block .inner-box:hover {
-    border-bottom-color: var(--brand-secondary);
+    border-bottom-color: var(--secondary);
 }
 
 .business-consulting .events-section.style-five .event-block:before {
-    background: var(--brand-secondary);
+    background: var(--secondary);
 }
 
 .business-consulting .events-section.style-five .events-info-tabs .events-tabs .tab-btns .tab-btn:before {
@@ -1457,19 +1457,19 @@
 }
 
 .business-consulting .price-block .inner-box {
-    border-color: var(--brand-secondary) !important;
+    border-color: var(--secondary) !important;
 }
 
 .business-consulting .price-block .inner-box .price {
-    color: var(--brand-secondary) !important;
+    color: var(--secondary) !important;
 }
 
 .business-consulting .price-block .inner-box .buy-btn {
-    background: var(--brand-secondary) !important;
+    background: var(--secondary) !important;
 }
 
 .business-consulting .newsletter-section .inner-container {
-    background: var(--brand-secondary);
+    background: var(--secondary);
 }
 
 .business-consulting .newsletter-section .inner-container .section-icons .icon-three {
@@ -1484,7 +1484,7 @@
 }
 
 .business-consulting .newsletter-section .newsletter-form button:hover {
-    color: var(--brand-secondary);
+    color: var(--secondary);
     background: var(--color-fff);
     border-color: var(--color-fff);
 }
@@ -1494,58 +1494,58 @@
 }
 
 .business-consulting .main-footer .footer-nav ul li:last-child a {
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .sticky-header .main-menu .navigation > li:hover > a, 
 .business-consulting .sticky-header .main-menu .navigation > li.current > a {
-    color: var(--brand-secondary) !important;
+    color: var(--secondary) !important;
 }
 
 .business-consulting .main-menu .navigation > li > ul > li:hover > a {
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .main-menu .navigation > li > ul > li > ul > li:hover > a {
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .scroll-to-top {
-    background: var(--brand-secondary);
+    background: var(--secondary);
 }
 
 .business-consulting .search-popup .search-form fieldset input[type="submit"] {
-    background: var(--brand-secondary);
+    background: var(--secondary);
 }
 
 .business-consulting .search-popup .recent-searches li a:hover {
-    color: var(--brand-secondary);
-    border-color: var(--brand-secondary);
+    color: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .business-consulting .search-popup .search-form fieldset input[type="submit"]:hover {
-    background: var(--brand-secondary);
+    background: var(--secondary);
 }
 
 .business-consulting .popup-content .content-column .inner-column .speakder-designation {
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 .business-consulting .popup-content .image-column .inner-column .image .social-box {
-    background: var(--brand-secondary);
+    background: var(--secondary);
 }
 
 .business-consulting .skills .skill-item .skill-bar .bar-inner .bar {
-    background: var(--brand-secondary);
+    background: var(--secondary);
 }
 
 .business-consulting .btn-style-one {
-    background: var(--brand-secondary);
-    border-color: var(--brand-secondary);
+    background: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .business-consulting .btn-style-one:hover {
-    color: var(--brand-secondary);
+    color: var(--secondary);
 }
 
 
@@ -1556,46 +1556,46 @@
 .food-festival .main-menu .navigation > li.current > a, 
 .food-festival .main-header.light-version .main-menu .navigation > li:hover > a, 
 .food-festival .main-header.light-version .main-menu .navigation > li.current > a {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .main-header .header-upper .outer-box .btn-box .theme-btn {
-    background: var(--brand-tertiary);
-    border-color: var(--brand-tertiary);
+    background: var(--tertiary);
+    border-color: var(--tertiary);
 }
 
 .food-festival .main-header .header-upper .outer-box .btn-box .theme-btn:hover {
     background: transparent;
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .main-menu .navigation > li > a:before {
-    background: var(--brand-tertiary);
+    background: var(--tertiary);
 }
 
 .food-festival .banner-section-four .buttons-box .btn-style-two {
-    background: var(--brand-tertiary);
-    border-color: var(--brand-tertiary);
+    background: var(--tertiary);
+    border-color: var(--tertiary);
 }
 
 .food-festival .banner-section-four .buttons-box .btn-style-two:hover {
     background: transparent;
-    border-color: var(--brand-tertiary);
-    color: var(--brand-tertiary);
+    border-color: var(--tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .banner-section-four .buttons-box .btn-style-one {
-    background: var(--brand-tertiary);
-    border-color: var(--brand-tertiary);
+    background: var(--tertiary);
+    border-color: var(--tertiary);
 }
 
 .food-festival .banner-section-four .buttons-box .btn-style-one:hover {
     background: transparent;
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .sec-title .title {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .sec-title .separator {
@@ -1607,22 +1607,22 @@
 }
 
 .food-festival .btn-style-two {
-    background: var(--brand-tertiary);
-    border-color: var(--brand-tertiary);
+    background: var(--tertiary);
+    border-color: var(--tertiary);
 }
 
 .food-festival .btn-style-two:hover {
     background: transparent;
-    border-color: var(--brand-tertiary);
-    color: var(--brand-tertiary);
+    border-color: var(--tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .feature-block-six .inner-box .icon-box {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .feature-block-six .inner-box h3 a:hover {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .counter-section-two:before {
@@ -1649,7 +1649,7 @@
 }
 
 .food-festival .speaker-section.style-three .speaker-block .inner-box .image:before {
-    background: var(--brand-tertiary);
+    background: var(--tertiary);
 }
 
 .food-festival .speaker-section.style-three .speaker-block .inner-box .image:after {
@@ -1657,47 +1657,47 @@
 }
 
 .food-festival .speaker-section.style-three .speaker-block .inner-box .image .social-box {
-    background: var(--brand-tertiary);
+    background: var(--tertiary);
 }
 
 .food-festival .speaker-block .inner-box .lower-content .designation {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .btn-style-four:before {
-    background: var(--brand-tertiary);
+    background: var(--tertiary);
 }
 
 .food-festival .btn-style-four:after {
-    border-color: var(--brand-tertiary);
+    border-color: var(--tertiary);
 }
 
 .food-festival .btn-style-four:hover {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .events-section .events-info-tabs .events-tabs .tab-btns .tab-btn:hover, 
 .food-festival .events-section .events-info-tabs .events-tabs .tab-btns .tab-btn.active-btn {
-    background: var(--brand-tertiary) url(../../images/background/pattern-2.png) no-repeat;
-    border-color: var(--brand-tertiary);
+    background: var(--tertiary) url(../../images/background/pattern-2.png) no-repeat;
+    border-color: var(--tertiary);
     background-size: cover;
 }
 
 .food-festival .events-section .events-info-tabs .events-tabs .tab-btns .tab-btn {
-    border-color: var(--brand-tertiary);
-    background-color: var(--brand-tertiary);
+    border-color: var(--tertiary);
+    background-color: var(--tertiary);
 }
 
 .food-festival .event-block .inner-box .info-column h2 a:hover {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .events-section.style-four .event-block .inner-box:hover {
-    border-bottom-color: var(--brand-tertiary);
+    border-bottom-color: var(--tertiary);
 }
 
 .food-festival .events-section.style-five .event-block:before {
-    background: var(--brand-tertiary);
+    background: var(--tertiary);
 }
 
 .food-festival .events-section.style-five .events-info-tabs .events-tabs .tab-btns .tab-btn:before {
@@ -1705,19 +1705,19 @@
 }
 
 .food-festival .price-block .inner-box {
-    border-color: var(--brand-tertiary) !important;
+    border-color: var(--tertiary) !important;
 }
 
 .food-festival .price-block .inner-box .price {
-    color: var(--brand-tertiary) !important;
+    color: var(--tertiary) !important;
 }
 
 .food-festival .price-block .inner-box .buy-btn {
-    background: var(--brand-tertiary) !important;
+    background: var(--tertiary) !important;
 }
 
 .food-festival .newsletter-section .inner-container {
-    background: var(--brand-tertiary);
+    background: var(--tertiary);
 }
 
 .food-festival .newsletter-section .inner-container .section-icons .icon-three {
@@ -1732,7 +1732,7 @@
 }
 
 .food-festival .newsletter-section .newsletter-form button:hover {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
     background: var(--color-fff);
     border-color: var(--color-fff);
 }
@@ -1742,66 +1742,66 @@
 }
 
 .food-festival .main-footer .footer-nav ul li:last-child a {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .sticky-header .main-menu .navigation > li:hover > a, 
 .food-festival .sticky-header .main-menu .navigation > li.current > a {
-    color: var(--brand-tertiary) !important;
+    color: var(--tertiary) !important;
 }
 
 .food-festival .main-menu .navigation > li > ul > li:hover > a {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .main-menu .navigation > li > ul > li > ul > li:hover > a {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .scroll-to-top {
-    background: var(--brand-tertiary);
+    background: var(--tertiary);
 }
 
 .food-festival .search-popup .search-form fieldset input[type="submit"] {
-    background: var(--brand-tertiary);
+    background: var(--tertiary);
 }
 
 .food-festival .search-popup .recent-searches li a:hover {
-    color: var(--brand-tertiary);
-    border-color: var(--brand-tertiary);
+    color: var(--tertiary);
+    border-color: var(--tertiary);
 }
 
 .food-festival .search-popup .search-form fieldset input[type="submit"]:hover {
-    background: var(--brand-tertiary);
+    background: var(--tertiary);
 }
 
 .food-festival .popup-content .content-column .inner-column .speakder-designation {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .popup-content .image-column .inner-column .image .social-box {
-    background: var(--brand-tertiary);
+    background: var(--tertiary);
 }
 
 .food-festival .skills .skill-item .skill-bar .bar-inner .bar {
-    background: var(--brand-tertiary);
+    background: var(--tertiary);
 }
 
 .food-festival .btn-style-one {
-    background: var(--brand-tertiary);
-    border-color: var(--brand-tertiary);
+    background: var(--tertiary);
+    border-color: var(--tertiary);
 }
 
 .food-festival .btn-style-one:hover {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .time-counter .time-countdown .counter-column {
-	color: var(--brand-tertiary);
+	color: var(--tertiary);
 }
 
 .food-festival .speaker-section.style-two .speaker-block .inner-box .image:before {
-    background: var(--brand-tertiary);
+    background: var(--tertiary);
 }
 
 .food-festival .speaker-section.style-two .speaker-block .inner-box .image .social-box {
@@ -1809,7 +1809,7 @@
 }
 
 .food-festival .speaker-section.style-two .speaker-block .inner-box .image .social-box li a {
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .food-festival .speaker-section.style-two .speaker-block .inner-box .image:after {
@@ -1834,12 +1834,12 @@
 }
 
 .food-festival .mission-section .video-column .video-image-box .image .video-boxed:hover {
-	border-color: var(--brand-tertiary);
+	border-color: var(--tertiary);
 	background: var(--color-222);
 }
 
 .food-festival .mission-section .video-column .video-image-box .image .video-boxed {
-	background-color: var(--brand-tertiary);
+	background-color: var(--tertiary);
 }
 
 .food-festival .events-section .events-info-tabs .events-tabs .tab-btns .tab-btn {
@@ -1885,7 +1885,7 @@
 .service-block-two .inner-box .price {
     font-size: 30px;
     font-weight: 600;
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 
@@ -1944,7 +1944,7 @@
 
 .testimonial-block-three .designation {
     font-size: 20px;
-    color: var(--brand-tertiary);
+    color: var(--tertiary);
 }
 
 .testimonial-block-three .upper-content {
@@ -2016,7 +2016,7 @@
   border-radius: 30px;
   display: inline-block;
   color: var(--bg-base) !important;
-  background-color: var(--brand-primary-light);
+  background-color: var(--primary-light);
   padding: 10px 25px 10px;
   font-size: 18px;
   font-weight: 500;
@@ -2031,7 +2031,7 @@
 }
 
 .buy-now-btn:hover {
-  background-color: var(--brand-primary-light);
+  background-color: var(--primary-light);
   color: var(--bg-base) !important;
 }
 
