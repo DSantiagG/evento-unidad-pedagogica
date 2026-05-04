@@ -401,6 +401,63 @@ body.business-consulting .travel-information-section iframe {
     box-shadow: 0 10px 24px rgba(7, 24, 74, 0.08);
 }
 
+/* --- Timer: align time column center --- */
+body.business-consulting .timer-section.style-two .time-column .inner-column {
+    text-align: center;
+}
+
+/* --- Timer: counter cards --- */
+body.business-consulting .timer-section.style-two .time-counter .time-countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.55rem;
+}
+
+body.business-consulting .timer-section.style-two .time-counter .time-countdown .counter-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 108px;
+    padding: 0.9rem 0.5rem 0.75rem;
+    margin: 0;
+    background: var(--color-fff);
+    border-radius: 16px;
+    border: 1px solid var(--neutral-border);
+    box-shadow: 0 6px 16px rgba(7, 24, 74, 0.07);
+    color: var(--text-primary);
+}
+
+body.business-consulting .timer-section.style-two .time-counter .time-countdown .counter-column::before {
+    display: none;
+}
+
+body.business-consulting .timer-section.style-two .time-counter .time-countdown .counter-column .count {
+    display: block;
+    position: static;
+    font-family: var(--font-body);
+    font-size: 2.9rem;
+    font-weight: 600;
+    color: var(--brand-primary);
+    line-height: 1;
+    padding: 0;
+    margin-bottom: 0.3rem;
+    background: none !important;
+    letter-spacing: -0.01em;
+}
+
+body.business-consulting .timer-section.style-two .time-counter .time-countdown .counter-column .unit {
+    position: static;
+    display: block;
+    width: auto;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--brand-secondary);
+}
+
 @media (max-width: 991.98px) {
     body.business-consulting .page-wrapper > section {
         padding: 2.25rem clamp(0.9rem, 4vw, 1.35rem);
@@ -476,5 +533,28 @@ body.business-consulting .travel-information-section iframe {
 
     body.business-consulting .travel-information-section .content-box {
         padding: 1.25rem 1rem;
+    }
+
+    body.business-consulting .timer-section.style-two .time-counter .time-countdown {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 270px;
+        margin: 0 auto;
+        gap: 0.5rem;
+    }
+
+    body.business-consulting .timer-section.style-two .time-counter .time-countdown .counter-column {
+        width: 100%;
+        padding: 0.65rem 0.4rem 0.55rem;
+        border-radius: 14px;
+    }
+
+    body.business-consulting .timer-section.style-two .time-counter .time-countdown .counter-column .count {
+        font-size: 1.75rem;
+        margin-bottom: 0.22rem;
+    }
+
+    body.business-consulting .timer-section.style-two .time-counter .time-countdown .counter-column .unit {
+        font-size: 0.58rem;
     }
 }
