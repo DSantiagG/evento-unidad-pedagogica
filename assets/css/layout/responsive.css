@@ -8,6 +8,31 @@
 	
 }
 
+/* Custom: ajustar logos de organizadores en pantallas pequeñas */
+@media only screen and (max-width: 767px) {
+
+	/* Uniformar logos de organizadores sólo en pantallas pequeñas */
+	section.py-5 .d-flex img{
+		max-height:80px !important;
+		width:auto !important;
+		object-fit:contain;
+		display:inline-block;
+		margin:6px 12px;
+	}
+}
+
+@media only screen and (max-width: 420px){
+	.feature-block-six .inner-box img{
+		width:80%;
+		max-width:220px;
+	}
+
+	section.py-5 .d-flex img{
+		max-height:64px !important;
+		margin:6px 8px;
+	}
+}
+
 @media only screen and (max-width: 1800px){
 	
 	.mission-section .video-column .video-image-box .image .video-boxed{

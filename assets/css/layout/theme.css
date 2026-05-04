@@ -21,6 +21,17 @@
   --neutral-border: #E4E1EC;
   --neutral-surface: #FBF8FF;
 
+  /* Colour scale — variations */
+  --primary-var-1: #9DA3FE;
+  --primary-var-2: #BEC2FF;
+  --secondary-var-1: #FE897F;
+  --secondary-var-2: #FFB4AB;
+  --secondary-var-3: #FFDAD6;
+  --tertiary-var-1: #78ACFF;
+  --tertiary-var-2: #A9C8FF;
+  --neutral-var-1: #C8C5D0;
+  --neutral-var-3: #F2EFFA;
+
   --text-primary: #222222;
   --text-secondary: #666666;
   --text-muted: #6c757d;

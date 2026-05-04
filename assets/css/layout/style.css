@@ -266,12 +266,6 @@ img{
 }
 
 /* Center header logo and navigation horizontally */
-.header-upper .auto-container > .clearfix{
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	gap:36px;
-}
 .header-upper .logo-box, .header-upper .nav-outer{
 	float:none;
 }
@@ -809,12 +803,15 @@ img{
 	padding:0; /* remove side padding so header aligns with sticky container */
 }
 
-/* Strong override: ensure non-sticky header uses same flex centering as sticky header */
-.main-header .header-upper .auto-container > .clearfix{
+/* Match sticky header: make auto-container the flex container and dissolve clearfix wrapper */
+.main-header .header-upper .auto-container{
 	display:flex !important;
 	align-items:center !important;
 	justify-content:center !important;
 	gap:36px !important;
+}
+.main-header .header-upper .auto-container > .clearfix{
+	display:contents !important; /* layout-transparent: children participate in auto-container flex */
 }
 
 .main-header .header-upper .nav-outer{

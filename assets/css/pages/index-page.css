@@ -34,6 +34,13 @@ body.business-consulting .page-wrapper > .timer-section.style-two {
 body.business-consulting .timer-section.style-two .inner-container {
     background: var(--bg-base);
     margin-top: 0.5rem;
+    padding: 30px 36px 30px !important;
+    transition: transform 0.26s ease, box-shadow 0.26s ease;
+}
+
+body.business-consulting .timer-section.style-two .inner-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(7, 24, 74, 0.12);
 }
 
 body.business-consulting .timer-section.style-two .title-column .inner-column {
@@ -102,6 +109,12 @@ body.business-consulting .home-highlights-icon {
     font-size: 0.98rem;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.78), 0 5px 12px rgba(0, 0, 102, 0.07);
     transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+/* Vary icon accent per card */
+body.business-consulting .home-highlights-card:nth-child(4) .home-highlights-icon {
+    background: var(--secondary-var-3);
+    color: var(--brand-secondary);
 }
 
 body.business-consulting .home-highlights-card:hover {
@@ -192,6 +205,10 @@ body.business-consulting .market-section .video-column .inner-column {
     border-radius: 18px;
 }
 
+body.business-consulting .market-section .video-column .inner-column {
+    overflow: hidden;
+}
+
 body.business-consulting .market-section .video-column .inner-column img {
     width: 100%;
     border-radius: 18px;
@@ -254,6 +271,7 @@ body.business-consulting .welcome-section-two .feature-block-six .inner-box {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    will-change: transform;
 }
 
 body.business-consulting .welcome-section-two .feature-block-six .inner-box img {
@@ -268,7 +286,19 @@ body.business-consulting .welcome-section-two .feature-block-six .inner-box p {
     padding: 1.15rem 1.25rem 1.25rem;
 }
 
-body.business-consulting .welcome-section-two .feature-block-six .inner-box:hover,
+body.business-consulting .welcome-section-two .feature-block-six {
+    transition: transform 0.26s ease;
+}
+
+body.business-consulting .welcome-section-two .feature-block-six:hover {
+    transform: translateY(-5px);
+}
+
+body.business-consulting .welcome-section-two .feature-block-six:hover .inner-box {
+    box-shadow: 0 18px 36px rgba(7, 24, 74, 0.12);
+    border-color: rgba(0, 0, 102, 0.14);
+}
+
 body.business-consulting .teacher-card:hover,
 body.business-consulting .travel-information-section .content-box:hover {
     transform: translateY(-4px);
@@ -288,9 +318,11 @@ body.business-consulting .welcome-section-two .feature-block-six img {
 }
 
 body.business-consulting .teacher-card {
-    padding: 1.5rem 1.25rem;
+    padding: 1.75rem 1.4rem 1.5rem;
     text-align: center;
+    position: relative;
 }
+
 
 body.business-consulting .teacher-card a {
     display: block;
@@ -299,8 +331,8 @@ body.business-consulting .teacher-card a {
 }
 
 body.business-consulting .teacher-card .avatar {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     margin: 0 auto 1rem;
     border-radius: 50%;
     display: flex;
@@ -308,55 +340,52 @@ body.business-consulting .teacher-card .avatar {
     justify-content: center;
     background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-light) 100%);
     color: var(--color-fff);
-    box-shadow: 0 10px 20px rgba(0, 0, 102, 0.14);
+    /* white ring + subtle border for depth */
+    box-shadow: 0 10px 22px rgba(0, 0, 102, 0.15),
+                0 0 0 4px var(--bg-base),
+                0 0 0 6px var(--neutral-border);
     font-size: 2.3rem;
-    transition: transform 0.25s ease;
+    transition: transform 0.26s ease, box-shadow 0.26s ease;
 }
 
 body.business-consulting .teacher-card:hover .avatar {
-    transform: translateY(-1px) scale(1.03);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 16px 30px rgba(0, 0, 102, 0.2),
+                0 0 0 4px var(--bg-base),
+                0 0 0 6px rgba(0, 0, 102, 0.18);
 }
 
 body.business-consulting .teacher-card .teacher-name {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.3rem;
     color: var(--primary-dark);
-    font-size: 1.04rem;
+    font-size: 1.08rem;
     font-weight: 800;
+    letter-spacing: -0.01em;
 }
 
 body.business-consulting .teacher-card .teacher-title {
     margin: 0;
     color: var(--brand-secondary);
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     font-weight: 700;
-    line-height: 1.12;
+    line-height: 1.3;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     display: block;
 }
 
 body.business-consulting .teacher-card .teacher-title + .teacher-title {
-    margin-top: 0.22rem;
-}
-
-/* Ensure a small visible gap under each title (works even if adjacent selector is ignored) */
-body.business-consulting .teacher-card .teacher-title {
-    margin-bottom: 0.48rem;
+    margin-top: 0.2rem;
 }
 
 body.business-consulting .teacher-card .teacher-desc {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-body.business-consulting .teacher-card .teacher-desc {
-    margin-top: 0.5rem;
-}
-
-body.business-consulting .teacher-card .teacher-desc {
+    text-align: left;
     color: var(--text-secondary);
-    font-size: 0.92rem;
-    line-height: 1.6;
+    font-size: 0.88rem;
+    line-height: 1.65;
+    margin-top: 0.85rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--neutral-border);
 }
 
 body.business-consulting section.py-5 .container img {
@@ -375,7 +404,6 @@ body.business-consulting .teacher-card .avatar img {
     object-fit: cover;
     border-radius: 50%;
     display: block;
-    box-shadow: 0 10px 20px rgba(0, 0, 102, 0.14);
 }
 
 body.business-consulting .travel-information-section .content-box {
@@ -419,14 +447,28 @@ body.business-consulting .timer-section.style-two .time-counter .time-countdown 
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 108px;
+    width: 170px;
     padding: 0.9rem 0.5rem 0.75rem;
     margin: 0;
     background: var(--color-fff);
     border-radius: 16px;
     border: 1px solid var(--neutral-border);
+    border-top: 3px solid transparent;
+    background-clip: padding-box;
     box-shadow: 0 6px 16px rgba(7, 24, 74, 0.07);
     color: var(--text-primary);
+    position: relative;
+}
+
+body.business-consulting .timer-section.style-two .time-counter .time-countdown .counter-column::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 18%;
+    width: 64%;
+    height: 3px;
+    border-radius: 0 0 3px 3px;
+    background: linear-gradient(90deg, var(--brand-primary) 0%, var(--brand-tertiary) 100%);
 }
 
 body.business-consulting .timer-section.style-two .time-counter .time-countdown .counter-column::before {
@@ -451,7 +493,7 @@ body.business-consulting .timer-section.style-two .time-counter .time-countdown 
     position: static;
     display: block;
     width: auto;
-    font-size: 0.62rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.09em;
     text-transform: uppercase;
@@ -555,6 +597,6 @@ body.business-consulting .timer-section.style-two .time-counter .time-countdown 
     }
 
     body.business-consulting .timer-section.style-two .time-counter .time-countdown .counter-column .unit {
-        font-size: 0.58rem;
+        font-size: 0.7rem;
     }
 }

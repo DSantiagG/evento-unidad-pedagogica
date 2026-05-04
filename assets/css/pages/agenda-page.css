@@ -92,9 +92,9 @@ body.business-consulting .agenda-section .container {
 }
 
 .agenda-tabs .nav-link.active {
-    background: #E0E0FF;
+    background: var(--primary-var-2);
     color: var(--brand-primary);
-    box-shadow: 0 8px 22px var(--color-rgba-0-0-0-0-12);
+    box-shadow: 0 8px 22px rgba(0, 0, 102, 0.12);
 }
 
 .agenda-tabs .nav-link.active::after {
@@ -128,7 +128,7 @@ body.business-consulting .agenda-section .container {
 }
 
 .timeline {
-    border-left: 3px solid #e0e0e0 ;
+    border-left: 3px solid var(--tertiary-var-2);
     padding-left: 25px;
     position: relative;
 }
@@ -140,7 +140,7 @@ body.business-consulting .agenda-section .container {
 }
 
 .timeline-item:hover {
-    transform: translateX(6px);
+    transform: translateX(4px);
 }
 
 .timeline-item::before {
@@ -152,23 +152,36 @@ body.business-consulting .agenda-section .container {
     height: 18px;
     background: var(--brand-primary);
     border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--bg-base), 0 0 0 5px rgba(0, 0, 102, 0.2);
 }
 
 .time-badge {
+    display: inline-block;
     font-weight: 600;
     color: var(--brand-primary);
-    margin-bottom: 5px;
+    font-size: 0.8rem;
+    margin-bottom: 7px;
+    padding: 2px 9px;
+    border-radius: 999px;
+    background: var(--primary-var-2);
+    letter-spacing: 0.02em;
 }
 
 .timeline-content {
-    background: var(--color-f4f4f6);
-    border-radius: 10px;
-    padding: 15px 20px;
-    box-shadow: 0 4px 15px var(--color-rgba-0-0-0-0-08);
+    background: var(--bg-base);
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 4px 14px rgba(7, 24, 74, 0.07);
+    transition: border-color .22s ease, box-shadow .22s ease;
 }
 
 body.business-consulting .timeline-content {
     border: 1px solid var(--neutral-border);
+}
+
+body.business-consulting .timeline-item:hover .timeline-content {
+    border-color: var(--brand-tertiary);
+    box-shadow: 0 6px 20px rgba(7, 24, 74, 0.1), -3px 0 0 var(--brand-tertiary);
 }
 
 .timeline-content i {
@@ -187,13 +200,14 @@ body.business-consulting .timeline-content {
 
 /* Important announcement card for certification requirements */
 .important-announcement {
-    background: #D6E2FF;
-    border-radius: 10px;
+    background: var(--tertiary-surface);
+    border-radius: 12px;
+    border-left: 4px solid var(--brand-primary);
     padding: 12px 16px;
-    box-shadow: 0 6px 18px rgba(15, 33, 80, 0.06);
+    box-shadow: 0 6px 18px rgba(7, 24, 74, 0.07);
     margin: 14px auto;
     width: auto;
-    max-width: 760px; /* limit width so it appears as a note */
+    max-width: 760px;
 }
 .important-announcement .auto-container {
     padding: 0; /* container padding handled by the card */
@@ -228,14 +242,14 @@ body.business-consulting .important-announcement h3 {
     width: 88px;
     height: 88px;
     border-radius: 50%;
-    background: var(--brand-primary); /* keep brand color always */
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-light) 100%);
     color: var(--color-fff);
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 22px rgba(0, 0, 102, 0.2);
     transition: transform .18s ease, box-shadow .18s ease;
 }
 
@@ -273,7 +287,7 @@ body.business-consulting .important-announcement h3 {
         top: 8px;
         bottom: 8px;
         width: 4px;
-        background: var(--color-e9e9ee);
+        background: var(--tertiary-var-2);
         z-index: 1;
         border-radius: 2px;
     }
@@ -333,7 +347,7 @@ body.business-consulting .important-announcement h3 {
         right: 6%;
         top: 44px; /* center of 88px badge */
         height: 4px;
-        background: var(--color-e9e9ee);
+        background: var(--tertiary-var-2);
         z-index: 1;
         border-radius: 2px;
     }

@@ -61,24 +61,31 @@ body.business-consulting .page-wrapper > section:nth-of-type(even) {
 /* Notices (Avisos) */
 .notice-card {
     border: 1px solid var(--neutral-border);
-    border-radius: 10px;
-    box-shadow: 0 8px 18px rgba(7, 24, 74, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(7, 24, 74, 0.07);
     background: var(--bg-base);
-    transition: transform .24s ease, box-shadow .24s ease;
+    transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease;
 }
 
 .notice-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 999px; /* circular */
+    width: 52px;
+    height: 52px;
+    border-radius: 999px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-light) 100%);
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 102, 0.15);
     transition: transform .24s ease, box-shadow .24s ease;
+}
+
+/* Second notice card gets a tertiary (blue) accent */
+.notice-card:nth-child(2) .notice-icon {
+    background: linear-gradient(135deg, var(--brand-tertiary) 0%, var(--tertiary-var-1) 100%);
+    box-shadow: 0 4px 12px rgba(29, 114, 211, 0.18);
 }
 
 .notice-body h3 {
@@ -94,22 +101,58 @@ body.business-consulting .page-wrapper > section:nth-of-type(even) {
 }
 
 /* Circulares list */
+.circular-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.circular-list li {
+    background: var(--bg-base);
+    border: 1px solid var(--neutral-border);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: background .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.circular-list li::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--brand-primary);
+    flex-shrink: 0;
+}
+
+.circular-list li:hover {
+    background: var(--neutral-var-3);
+    border-color: rgba(0, 0, 102, 0.14);
+    box-shadow: 0 4px 12px rgba(7, 24, 74, 0.06);
+}
+
 .circular-list li .link-view {
     color: var(--brand-primary);
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
     font-weight: 700;
+    transition: color .2s ease;
 }
 
-.circular-list li { background: transparent; }
+.circular-list li:hover .link-view {
+    color: var(--brand-tertiary);
+}
 
 /* Gallery placeholder */
 .gallery-placeholder {
-    border: 1px dashed var(--neutral-border);
-    border-radius: 8px;
-    background: var(--bg-base);
-    box-shadow: 0 6px 14px rgba(7,24,74,0.04);
+    border: 2px dashed var(--neutral-var-1);
+    border-radius: 18px;
+    background: var(--neutral-var-3);
+    box-shadow: 0 4px 12px rgba(7, 24, 74, 0.04);
 }
 
 .gallery-placeholder .gallery-icon {
@@ -129,13 +172,18 @@ body.business-consulting .page-wrapper > section:nth-of-type(even) {
     .notice-card { padding: 1rem; }
 }
 
-/* Hover / interactive behaviour similar to highlights */
+/* Hover / interactive behaviour */
 .notice-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 34px rgba(7, 24, 74, 0.09);
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(7, 24, 74, 0.1);
+    border-color: rgba(0, 0, 102, 0.14);
 }
 
 .notice-card:hover .notice-icon {
-    transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 8px 20px rgba(7,24,74,0.08);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(7,24,74,0.1);
+}
+
+.notice-card:nth-child(2):hover .notice-icon {
+    box-shadow: 0 8px 20px rgba(29, 114, 211, 0.2);
 }
