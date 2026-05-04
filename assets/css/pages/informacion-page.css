@@ -1,0 +1,141 @@
+/* Styles for informacion.html (minimal for now) */
+body.business-consulting .info-hero {
+    padding: clamp(3rem, 6vw, 6rem) 0;
+    background: var(--bg-light);
+    text-align: center;
+}
+
+body.business-consulting .info-hero h1 {
+    font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+    margin-bottom: 0.6rem;
+    color: var(--primary-dark);
+}
+
+body.business-consulting .info-hero .lead {
+    color: var(--text-secondary);
+    margin-bottom: 1.2rem;
+}
+
+/* Ensure the primary button stands out */
+.info-hero .btn-primary {
+    background: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
+/* Section base spacing consistent with other pages */
+body.business-consulting .page-wrapper > section {
+    padding: clamp(1.4rem, 3.2vw, 2.6rem) clamp(0.9rem, 3vw, 2.1rem);
+}
+
+/* Alternate background between sections to match index.html */
+body.business-consulting .page-wrapper > section {
+    background: var(--bg-base);
+}
+
+/* Start with a white section, then alternate from the second section */
+body.business-consulting .page-wrapper > section:nth-of-type(even) {
+    background: var(--bg-light);
+}
+
+/* Section title style reuse */
+.notifications-section .sec-title.centered h2,
+.circulares-section .sec-title.centered h2,
+.gallery-section .sec-title.centered h2 {
+    color: var(--primary-dark);
+    font-family: var(--font-body);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    font-size: clamp(1.4rem, 2.4vw, 2rem);
+}
+
+.sec-title.centered h2::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 3px;
+    margin: 0.7rem auto 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--brand-primary) 0%, var(--brand-tertiary) 100%);
+}
+
+/* Notices (Avisos) */
+.notice-card {
+    border: 1px solid var(--neutral-border);
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(7, 24, 74, 0.06);
+    background: var(--bg-base);
+    transition: transform .24s ease, box-shadow .24s ease;
+}
+
+.notice-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 999px; /* circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-light) 100%);
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    transition: transform .24s ease, box-shadow .24s ease;
+}
+
+.notice-body h3 {
+    margin: 0 0 0.35rem 0;
+    font-size: 1.05rem;
+    color: var(--primary-dark);
+}
+
+.notice-body p {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Circulares list */
+.circular-list li .link-view {
+    color: var(--brand-primary);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    font-weight: 700;
+}
+
+.circular-list li { background: transparent; }
+
+/* Gallery placeholder */
+.gallery-placeholder {
+    border: 1px dashed var(--neutral-border);
+    border-radius: 8px;
+    background: var(--bg-base);
+    box-shadow: 0 6px 14px rgba(7,24,74,0.04);
+}
+
+.gallery-placeholder .gallery-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--brand-primary) 100%);
+    color: #fff;
+}
+
+@media (max-width: 767.98px) {
+    .notice-icon { width: 48px; height: 48px; }
+    .notice-card { padding: 1rem; }
+}
+
+/* Hover / interactive behaviour similar to highlights */
+.notice-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 34px rgba(7, 24, 74, 0.09);
+}
+
+.notice-card:hover .notice-icon {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(7,24,74,0.08);
+}

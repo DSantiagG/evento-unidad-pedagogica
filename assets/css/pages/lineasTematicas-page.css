@@ -84,6 +84,28 @@ body.business-consulting .thematic-lines-section .card-body h3 {
     line-height: 1.25;
 }
 
+/* Make main thematic titles larger when marked with bootstrap weight class */
+body.business-consulting .thematic-lines-section .card-body .fw-bold {
+    font-size: clamp(1.45rem, 2.4vw, 1.9rem);
+    line-height: 1.12;
+}
+
+/* Ensure regular h3 (not Subtemas) are a bit larger for emphasis */
+body.business-consulting .thematic-lines-section .card-body h3:not(.subtemas) {
+    font-size: 1.25rem;
+}
+
+/* Make the explicit 'Subtemas' headings smaller and secondary */
+body.business-consulting .thematic-lines-section .card-body .subtemas {
+    /* restore to original: normal size and primary brand color */
+    font-size: 1.12rem;
+    color: var(--brand-primary);
+    font-weight: 700;
+    margin-top: 0.45rem;
+    margin-bottom: 0.45rem;
+    letter-spacing: 0.02em;
+}
+
 /* Solo los encabezados "Subtemas" y las etiquetas "Coordinadores" deben ser secundarias */
 .thematic-lines-section .card-body h2 {
     color: var(--brand-secondary);

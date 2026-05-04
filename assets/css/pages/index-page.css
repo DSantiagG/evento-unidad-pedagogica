@@ -72,6 +72,7 @@ body.business-consulting .home-highlights-card {
     background: rgba(255, 255, 255, 0.96);
     box-shadow: 0 8px 18px rgba(7, 24, 74, 0.06);
     overflow: hidden;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
 }
 
 body.business-consulting .home-highlights-card::after {
@@ -100,6 +101,18 @@ body.business-consulting .home-highlights-icon {
     color: var(--primary-dark);
     font-size: 0.98rem;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.78), 0 5px 12px rgba(0, 0, 102, 0.07);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+body.business-consulting .home-highlights-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(7, 24, 74, 0.10);
+    border-color: rgba(0, 0, 102, 0.12);
+}
+
+body.business-consulting .home-highlights-card:hover .home-highlights-icon {
+    transform: translateY(-1px) scale(1.06);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.9), 0 8px 18px rgba(0,0,102,0.09);
 }
 
 body.business-consulting .home-highlights-copy {
@@ -286,8 +299,8 @@ body.business-consulting .teacher-card a {
 }
 
 body.business-consulting .teacher-card .avatar {
-    width: 84px;
-    height: 84px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto 1rem;
     border-radius: 50%;
     display: flex;
@@ -312,12 +325,32 @@ body.business-consulting .teacher-card .teacher-name {
 }
 
 body.business-consulting .teacher-card .teacher-title {
-    margin-bottom: 0.7rem;
+    margin: 0;
     color: var(--brand-secondary);
-    font-size: 0.74rem;
+    font-size: 0.78rem;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    line-height: 1.12;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
+    display: block;
+}
+
+body.business-consulting .teacher-card .teacher-title + .teacher-title {
+    margin-top: 0.22rem;
+}
+
+/* Ensure a small visible gap under each title (works even if adjacent selector is ignored) */
+body.business-consulting .teacher-card .teacher-title {
+    margin-bottom: 0.48rem;
+}
+
+body.business-consulting .teacher-card .teacher-desc {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+body.business-consulting .teacher-card .teacher-desc {
+    margin-top: 0.5rem;
 }
 
 body.business-consulting .teacher-card .teacher-desc {
@@ -334,6 +367,15 @@ body.business-consulting section.py-5 .container img {
 body.business-consulting section.py-5 .container img:hover {
     transform: translateY(-2px);
     opacity: 0.96;
+}
+
+body.business-consulting .teacher-card .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0 10px 20px rgba(0, 0, 102, 0.14);
 }
 
 body.business-consulting .travel-information-section .content-box {
