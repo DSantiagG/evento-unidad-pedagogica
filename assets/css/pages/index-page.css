@@ -269,23 +269,29 @@ body.business-consulting .travel-information-section .content-box {
 }
 
 body.business-consulting .welcome-section-two .feature-block-six .inner-box {
-    padding: 0;
+    padding: 1.75rem 1.5rem 1.6rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     will-change: transform;
 }
 
-body.business-consulting .welcome-section-two .feature-block-six .inner-box img {
-    display: block;
-    width: 100%;
-    margin: 0 !important;
-    border-radius: 18px 18px 0 0;
+body.business-consulting .welcome-section-two .feature-block-six .inner-box .objective-number {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--primary);
+    background: linear-gradient(90deg, var(--primary) 0%, var(--tertiary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.85rem;
+    letter-spacing: 0.5px;
 }
 
 body.business-consulting .welcome-section-two .feature-block-six .inner-box p {
     margin: 0;
-    padding: 1.15rem 1.25rem 1.25rem;
 }
 
 body.business-consulting .welcome-section-two .feature-block-six {

@@ -175,6 +175,23 @@
     font-weight: 700;
 }
 
+.insc-inline-link {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+}
+
+.insc-inline-link:hover,
+.insc-inline-link:focus {
+    color: var(--primary-light);
+    text-decoration: underline;
+}
+
+.insc-inline-link strong {
+    color: inherit;
+}
+
 /* Links */
 .insc-link {
     display: inline-flex;
