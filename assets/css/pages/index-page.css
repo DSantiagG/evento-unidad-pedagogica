@@ -16,7 +16,7 @@ body.business-consulting .page-wrapper > .home-highlights-section {
 
 body.business-consulting .home-highlights-panel {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 205px));
+    grid-template-columns: repeat(3, minmax(0, 205px));
     justify-content: center;
     gap: 0.6rem;
     width: fit-content;
@@ -319,6 +319,65 @@ body.business-consulting .welcome-section-two .feature-block-six p {
     line-height: 1.4;
     margin-bottom: 0;
 }
+
+/* --- Modalidades de Participación --- */
+body.business-consulting .modalidades-section .modalidades-intro {
+    margin: 0.85rem auto 0;
+    max-width: 640px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+body.business-consulting .modalidades-section .feature-block-six .inner-box {
+    align-items: flex-start;
+}
+
+body.business-consulting .modalidad-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--tertiary) 100%);
+    color: var(--color-fff);
+    font-size: 1.4rem;
+    box-shadow: 0 8px 18px rgba(0, 0, 102, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    transition: transform 0.26s ease, box-shadow 0.26s ease;
+}
+
+body.business-consulting .modalidad-block:hover .modalidad-icon {
+    transform: translateY(-2px) scale(1.06);
+    box-shadow: 0 14px 26px rgba(0, 0, 102, 0.22),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+body.business-consulting .modalidad-title {
+    margin: 0 0 0.6rem;
+    color: var(--primary-dark);
+    font-family: var(--font-body);
+    font-size: 1.18rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
+@media (max-width: 767.98px) {
+    body.business-consulting .modalidad-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+        margin-bottom: 0.85rem;
+    }
+
+    body.business-consulting .modalidad-title {
+        font-size: 1.08rem;
+    }
+}
+/* --- End Modalidades de Participación --- */
 
 body.business-consulting .welcome-section-two .feature-block-six img {
     width: 100%;

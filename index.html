@@ -10,7 +10,7 @@
   <link href="assets/css/base/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="assets/css/layout/style.css?v=10" rel="stylesheet">
   <link href="assets/css/layout/style-2.css?v=10" rel="stylesheet">
-  <link href="assets/css/pages/index-page.css" rel="stylesheet">
+  <link href="assets/css/pages/index-page.css?v=3" rel="stylesheet">
   <link href="assets/css/layout/responsive.css" rel="stylesheet">
   <link href="assets/css/components/inscripcion-modal.css" rel="stylesheet">
 
@@ -61,6 +61,15 @@
             <div class="home-highlights-copy">
               <span class="home-highlights-label">Duración</span>
               <strong class="home-highlights-value">16 horas</strong>
+            </div>
+          </div>
+          <div class="home-highlights-card">
+            <div class="home-highlights-icon" aria-hidden="true">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="home-highlights-copy">
+              <span class="home-highlights-label">Visitas al Sitio</span>
+              <strong class="home-highlights-value" id="visit-count">…</strong>
             </div>
           </div>
         </div>
@@ -213,6 +222,60 @@
     </section>
     <!-- End Target Population Section -->
 
+    <!-- Participation Modes Section -->
+    <section class="welcome-section-two modalidades-section">
+      <div class="auto-container">
+
+        <div class="sec-title centered">
+          <h2>Modalidades de Participación</h2>
+          <div class="separator"></div>
+        </div>
+
+        <div class="lower-section">
+          <div class="row justify-content-center clearfix">
+
+            <!-- Poster -->
+            <div class="feature-block-six modalidad-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <span class="modalidad-icon" aria-hidden="true">
+                  <i class="fa-solid fa-image"></i>
+                </span>
+                <h3 class="modalidad-title">Póster</h3>
+                <p>Presentación visual de experiencias o investigaciones en formato de póster, dispuesto para el
+                  diálogo con los asistentes durante el evento.</p>
+              </div>
+            </div>
+
+            <!-- Oral Presentation -->
+            <div class="feature-block-six modalidad-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box active wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <span class="modalidad-icon" aria-hidden="true">
+                  <i class="fa-solid fa-microphone-lines"></i>
+                </span>
+                <h3 class="modalidad-title">Presentación Oral</h3>
+                <p>Ponencia de experiencias culminadas o en proceso, orientada a compartir hallazgos y reflexiones
+                  desde la praxis pedagógica.</p>
+              </div>
+            </div>
+
+            <!-- Workshops -->
+            <div class="feature-block-six modalidad-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
+                <span class="modalidad-icon" aria-hidden="true">
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                </span>
+                <h3 class="modalidad-title">Talleres</h3>
+                <p>Participa activamente en los talleres y mesas de diálogo en torno a las líneas temáticas
+                  del coloquio.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Participation Modes Section -->
+
     <!-- Speakers Section -->
     <section class="welcome-section-two mt-4 mb-4">
       <div class="auto-container">
@@ -233,16 +296,16 @@
                 <div class="teacher-name">Daniel Hugo Suárez</div>
                 <div class="teacher-title">Director del Instituto de investigaciones en Ciencias de la Educación</div>
                 <div class="teacher-title">Universidad de Buenos Aires </div>
-                
-                <div class="teacher-desc">El doctor Daniel Hugo Suárez es Director 
-                  del Instituto de Investigaciones en Ciencias de la Educación de 
-                  la Universidad de Buenos Aires, Argentina. Su trayectoria académica 
-                  se ha destacado por sus aportes al campo de la pedagogía, la formación 
-                  docente y la investigación educativa en América Latina, especialmente en 
+
+                <div class="teacher-desc">El doctor Daniel Hugo Suárez es Director
+                  del Instituto de Investigaciones en Ciencias de la Educación de
+                  la Universidad de Buenos Aires, Argentina. Su trayectoria académica
+                  se ha destacado por sus aportes al campo de la pedagogía, la formación
+                  docente y la investigación educativa en América Latina, especialmente en
                   temas relacionados con narrativas pedagógicas, memoria escolar y transformación
-                   de las prácticas educativas. Su trabajo ha contribuido al fortalecimiento de 
-                   procesos de reflexión crítica e innovación en diversos escenarios universitarios 
-                   y escolares.</div>
+                  de las prácticas educativas. Su trabajo ha contribuido al fortalecimiento de
+                  procesos de reflexión crítica e innovación en diversos escenarios universitarios
+                  y escolares.</div>
               </a>
             </div>
           </div>
@@ -315,20 +378,12 @@
   <script src="assets/js/core/popper.min.js"></script>
   <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
   <script src="assets/js/utils/includes.js"></script>
-  <script src="assets/js/plugins/parallax.min.js"></script>
-  <script src="assets/js/plugins/jquery.scrollTo.js"></script>
-  <script src="assets/js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="assets/js/plugins/jquery.fancybox.js"></script>
-  <script src="assets/js/plugins/owl.js"></script>
   <script src="assets/js/plugins/wow.js"></script>
-  <script src="assets/js/plugins/magnific-popup.min.js"></script>
-  <script src="assets/js/plugins/appear.js"></script>
-  <script src="assets/js/plugins/swiper.min.js"></script>
   <script src="assets/js/plugins/jquery.countdown.js"></script>
-  <script src="assets/js/plugins/jquery-ui.js"></script>
-  <script src="assets/js/plugins/paroller.js"></script>
   <script src="assets/js/main/script.js"></script>
   <script src="assets/js/main/inscripcion-modal.js"></script>
+  <script src="assets/js/main/imagenes-modal.js"></script>
+  <script src="assets/js/main/visit-counter.js"></script>
 
 </body>
 

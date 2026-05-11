@@ -33,7 +33,12 @@ body.business-consulting .sec-title.centered h2::after {
 
 body.business-consulting .page-wrapper > section.welcome-section-two {
     padding-top: 0.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0;
+}
+
+body.business-consulting .page-wrapper > section.thematic-lines-section {
+    padding-top: 0;
+    padding-bottom: clamp(2rem, 3.5vw, 3.5rem);
 }
 
 body.business-consulting .welcome-section-two .auto-container {
@@ -56,7 +61,45 @@ body.business-consulting .welcome-section-two .auto-container h3 {
 }
 
 body.business-consulting .thematic-lines-section .container {
-    padding-top: clamp(0.25rem, 1vw, 0.75rem);
+    padding-top: 0;
+}
+
+body.business-consulting .welcome-section-two .video-column .inner-column img {
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+@-webkit-keyframes softSlideInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(36px, 0, 0);
+        transform: translate3d(36px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes softSlideInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(36px, 0, 0);
+        transform: translate3d(36px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+body.business-consulting .soft-slide-in-right {
+    -webkit-animation-name: softSlideInRight;
+    animation-name: softSlideInRight;
 }
 
 .thematic-line-card {
@@ -67,16 +110,8 @@ body.business-consulting .thematic-lines-section .container {
 
 .thematic-line-card:hover {
     transform: translateY(-4px);
-}
-
-.thematic-line-img {
-    overflow: hidden;
-}
-
-.thematic-line-img img {
-    width: 100%;
-    height: auto;
-    display: block;
+    box-shadow: 0 14px 30px rgba(7, 24, 74, 0.10) !important;
+    border-color: rgba(0, 0, 102, 0.12);
 }
 
 /* Línea temática: títulos principales */
@@ -148,26 +183,6 @@ body.business-consulting .thematic-lines-section .card-body h2::after {
 @media (max-width: 767.98px) {
     body.business-consulting .page-wrapper > section {
         padding: 2rem clamp(0.8rem, 4.5vw, 1.05rem);
-    }
-
-    body.business-consulting .thematic-lines-section .row.g-0.align-items-stretch {
-        flex-direction: column;
-    }
-
-    body.business-consulting .thematic-lines-section .row.g-0.align-items-stretch > [class*="col-"] {
-        flex: 0 0 100%;
-        max-width: 100%;
-        width: 100%;
-    }
-
-    body.business-consulting .thematic-line-img {
-        height: auto;
-    }
-
-    body.business-consulting .thematic-line-img img {
-        display: block;
-        width: 100%;
-        height: auto;
     }
 
     body.business-consulting .thematic-lines-section .card-body {

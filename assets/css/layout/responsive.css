@@ -81,10 +81,6 @@
 		left:0px;
 	}
 	
-	.gallery-section-two .owl-nav{
-		padding-right:15px;
-	}
-	
 	.main-menu .navigation > li{
 		margin-left:0px;
 	}
@@ -719,11 +715,9 @@
 		display:block;
 	}
 	
-	.main-slider .owl-nav,
-	.main-slider .schedule-box,
 	.main-menu .navbar-collapse > .navigation li.dropdown:after,
 	.main-menu .navigation > li > ul:before{
-		display:none !important;	
+		display:none !important;
 	}
 	
 	.main-header .btn-outer{
@@ -1140,12 +1134,6 @@
 		display:none;
 	}
 	
-	.gallery-section-two .owl-nav{
-		position:relative;
-		top:0px;
-		padding:30px 15px;
-	}
-	
 	.digital-event-section .content-box{
 		padding-left:20px;
 		padding-right:20px;
@@ -1216,9 +1204,13 @@
 /* Ensure the banner image can render fully at all breakpoints */
 body.business-consulting .page-wrapper,
 body.business-consulting .banner-section-two,
-body.business-consulting .banner-section-two .outer-container,
-body.business-consulting .banner-section-two .outer-container img{
+body.business-consulting .banner-section-two .outer-container{
 	overflow: visible !important;
+	height: auto !important;
+	max-height: none !important;
+}
+
+body.business-consulting .banner-section-two .outer-container img{
 	height: auto !important;
 	max-height: none !important;
 }
