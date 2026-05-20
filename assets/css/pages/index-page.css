@@ -309,9 +309,9 @@ body.business-consulting .welcome-section-two .feature-block-six:hover .inner-bo
 
 body.business-consulting .teacher-card:hover,
 body.business-consulting .travel-information-section .content-box:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(7, 24, 74, 0.08);
-    border-color: rgba(0, 0, 102, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 18px 36px rgba(7, 24, 74, 0.12);
+    border-color: rgba(0, 0, 102, 0.14);
 }
 
 body.business-consulting .welcome-section-two .feature-block-six p {
