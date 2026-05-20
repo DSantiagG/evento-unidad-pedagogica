@@ -388,6 +388,8 @@ body.business-consulting .teacher-card {
     padding: 1.75rem 1.4rem 1.5rem;
     text-align: center;
     position: relative;
+    height: auto;
+    align-self: flex-start;
 }
 
 
@@ -395,6 +397,29 @@ body.business-consulting .teacher-card a {
     display: block;
     color: inherit;
     text-decoration: none;
+}
+
+body.business-consulting .teacher-card .teacher-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0 auto 0.85rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+body.business-consulting .teacher-card .teacher-badge i {
+    font-size: 0.7rem;
+}
+
+body.business-consulting .teacher-card .teacher-badge--international {
+    color: var(--primary);
+}
+
+body.business-consulting .teacher-card .teacher-badge--national {
+    color: var(--primary);
 }
 
 body.business-consulting .teacher-card .avatar {
