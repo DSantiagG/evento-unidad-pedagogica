@@ -147,12 +147,17 @@ body.business-consulting .agenda-section .container {
     content: "";
     position: absolute;
     left: -34px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 5px;
     width: 18px;
     height: 18px;
     background: var(--primary);
     border-radius: 50%;
+}
+
+.time-badge {
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 5px;
 }
 
 .timeline-content {
