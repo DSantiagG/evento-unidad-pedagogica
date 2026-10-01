@@ -139,6 +139,20 @@ body.business-consulting .agenda-section .container {
     transition: all .3s ease;
 }
 
+button.timeline-content {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--neutral-border);
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
 .timeline-item:hover {
     transform: translateX(6px);
 }
@@ -172,9 +186,25 @@ body.business-consulting .timeline-content {
     border: 1px solid var(--neutral-border);
 }
 
-body.business-consulting .timeline-item:hover .timeline-content {
+body.business-consulting .timeline-item:not(.conference-item):hover .timeline-content {
     border-color: var(--primary);
     box-shadow: 0 6px 20px rgba(7, 24, 74, 0.1), -3px 0 0 var(--primary);
+}
+
+body.business-consulting .conference-item:hover {
+    transform: translateX(6px);
+}
+
+body.business-consulting .conference-trigger:hover,
+body.business-consulting .conference-trigger:focus-visible {
+    background: var(--tertiary-var-3);
+    border-color: var(--tertiary-var-2);
+    box-shadow: 0 6px 20px rgba(29, 114, 211, 0.12), -3px 0 0 var(--tertiary);
+}
+
+body.business-consulting .conference-trigger:focus-visible {
+    outline: 3px solid var(--tertiary-var-2);
+    outline-offset: 5px;
 }
 
 .timeline-content i {
@@ -184,6 +214,13 @@ body.business-consulting .timeline-item:hover .timeline-content {
 
 .timeline-content strong {
     color: var(--color-333);
+}
+
+.conference-title {
+    display: inline-block;
+    margin-top: 3px;
+    color: var(--primary-dark);
+    font-weight: 700;
 }
 
 /* --- Fechas Importantes timeline --- */
