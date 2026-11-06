@@ -34,6 +34,20 @@
         { src: 'assets/images/galeria/photo_25.jpeg', alt: 'Descripción de la fotografía' },
         { src: 'assets/images/galeria/photo_26.jpeg', alt: 'Descripción de la fotografía' },
         { src: 'assets/images/galeria/photo_27.jpeg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_28.jpg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_29.jpeg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_30.jpg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_31.jpg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_32.jpg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_33.jpg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_34.jpeg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_35.jpeg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_36.jpeg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_37.jpeg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_38.jpeg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_39.jpeg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_40.jpeg', alt: 'Descripción de la fotografía' },
+        { src: 'assets/images/galeria/photo_41.jpeg', alt: 'Descripción de la fotografía' },
     ];
 
     var gallery = document.getElementById('photo-gallery');
